@@ -163,7 +163,7 @@ button {
 }
 .taskDelete {
     background: #e74c3c;
-    padding-left: 30px;
+    padding-left: 31px;
 }
 .taskDelete:hover {
     background: #c0392b;
@@ -184,10 +184,8 @@ button {
 .taskList .taskItem:nth-child(even) {
     background: #fcfcfc;
 }
-.taskCheckbox {
-    margin-right: 1em;
-}
-.complete-true {
+
+.complete-Done {
     text-decoration:  line-through;
     color: #bebebe;
 }
@@ -203,7 +201,7 @@ button {
     margin-right: 10px;
     font-size: 16px;
 }
-[class*='category-'] {
+[class*='priority-'] {
     display: inline-block;
     font-size: 10px;
     background: #444;
@@ -218,24 +216,19 @@ button {
     text-transform: uppercase;
     margin-right: 20px;
 }
-.category- {
+.priority- {
     background: transparent;
 }
-.category-Personal {
-    background: #2980b9;
+.priority-Normal {
+    background: #74DF00;
 }
-.category-Work {
-    background: #8e44ad;
+.priority-Alta {
+    background: #FF8000;
 }
-.category-School {
-    background: #f39c12;
+.priority-Urgente {
+    background: #e74c3c;
 }
-.category-Cleaning {
-    background: #16a085;
-}
-.category-Other {
-    background: #d35400;
-}
+
 footer {
     text-align: center;
     font-size: 11px;
@@ -275,8 +268,9 @@ footer a {
     content: '\f14a';
     color: #16a085;
 }
+
 /* custom select menu */
-.taskCategory {
+.taskPriority {
     -webkit-appearance: none;
             appearance: none;
     cursor: pointer;
@@ -292,9 +286,13 @@ footer a {
     color: #777;
     pointer-events: none;
 }
-.taskCategory option {
+.taskPriority option {
     background: #fff;
     border: none;
     outline: none;
     padding: 0 100px;
+}
+
+.content{
+    font-size: 11px;
 }
